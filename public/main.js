@@ -120,7 +120,7 @@ function animate() {
 
 	nameFlash++;
 	if (nameFlash > 3) {
-		$("#incoming_scrop").html("…");
+		$("#incoming_scrop").html("");
 	}
 }
 

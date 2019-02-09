@@ -15,21 +15,21 @@
 			<div class="infobox" onclick="selPen()"><img id="tPen" class="tool" src="img/pen1.png"><span class="tooltiptext">Crayon</span></div>
 			<div class="infobox" onclick="selBrush()"><img id="tBrush" class="tool" src="img/brush1.png"><span class="tooltiptext">Surligneur</span></div>
 			<div class="infobox" onclick="selGom()"><img id="tGom" class="tool" src="img/gom1.png"><span class="tooltiptext">Gomme</span></div>
-			<div class="infobox" onclick="clearLocal()">X<span class="tooltiptext">Effacer tout</span></div>
+			<div class="infobox" onclick="clearLocal()" ><span style="font-size:23px;">X<span class="tooltiptext">Effacer tout</span></div>
 			<button class="jscolor {valueElement:'pencolor'}"
     				style="
     				text-align: center;
 					float:left;
 					width: 50px;
-					height: 20px;
+					height: 36px;
 					margin: 3px;
 					padding: 3px;
-					border: 4px solid #444444;
+					border: 4px solid #2F3034;
 					border-radius: 5px;
 					"><span class="tooltiptext">Choix de la couleur</span></button>
-			<div class="infobox"><input id="penwidth" type="range" min="1" max="50" value="3" style="width:90px; height: 10px"><span class="tooltiptext">Taille du crayon</span></div>
+			<div class="infobox"><input id="penwidth" type="range" min="1" max="50" value="3" style="width:90px; height: 25px"><span class="tooltiptext">Taille du crayon</span></div>
 			<input hidden id="pencolor" value="000000">
-			<div class="infobox" style="min-width: 50px" id="incoming_scrop"><span class="tooltiptext">Activité</span></div>
+			<div class="activitytext" style="" id="incoming_scrop"><span class="tooltiptext">Activité</span></div>
 		</div>
 		<div class="bgholder">
 			<img id="bg" src="img/bg1.jpg"></img>
