@@ -90,94 +90,38 @@ function hexToRgb(hex) {
 
 // drawing loop
 function animate() {
-
-	//updateTool();
-	friender();
-	if (friend.active) {
-		friend.pencolor = document.getElementById("pencolor").value;
-		friend.penwidth = document.getElementById("penwidth").value;
-	
-		if(friend.pX != friend.x && friend.pY != friend.y)
-		{
-			if(friend.tool == ERASER)
+	Object.keys(friends).forEach(function (name) {
+		if (friends[name].active) {
+			if(friends[name].tool == ERASER)
 			{
-				//console.log("ERASE : "+friend.x*WW+" "+friend.y*HH+" "+friend.penwidth/2.);
-				outc.clearRect((friend.x * WW - friend.penwidth/2.), (friend.y * HH - friend.penwidth/2.), friend.penwidth, friend.penwidth);
+				fc.clearRect((friends[name].x * WW - friends[name].penwidth/2.), (friends[name].y * HH - friends[name].penwidth/2.), friends[name].penwidth, friends[name].penwidth);
 			} else {
-				if(friend.tool == BRUSH) {
-					//console.log("BRUSH");
-					rvb = hexToRgb("#"+friend.pencolor);
-					//console.log("RVB : "+rvb.r+" "+rvb.g+" "+rvb.b);
-					outc.strokeStyle = 'rgba('+rvb.r+','+rvb.g+','+rvb.b+',0.02)';
-					outc.lineCap = "round";
-					outc.lineJoin = "round";
+				if(friends[name].pX == -1) {
+					friends[name].pX = friends[name].x;
+					friends[name].pY = friends[name].y;
+				}
+				if(friends[name].tool == BRUSH) {
+					rvb = hexToRgb("#"+friends[name].pencolor);
+					fc.strokeStyle = 'rgba('+rvb.r+','+rvb.g+','+rvb.b+',0.02)';
 				} else {
-					//console.log("PEN");
-					outc.strokeStyle = "#"+friend.pencolor;
-					outc.lineCap = "round";
-					outc.lineJoin = "round";
+					fc.strokeStyle = "#"+friends[name].pencolor;
 				}
-				outc.lineWidth = friend.penwidth;
-				outc.beginPath();
-				if(friend.pX == -1) {
-					friend.pX = friend.x;
-					friend.pY = friend.y;
-				}
-				outc.moveTo(friend.pX * WW, friend.pY * HH);
-				outc.lineTo(friend.pX * WW, friend.pY * HH);
-				outc.lineTo(friend.x * WW, friend.y * HH);
-				outc.stroke();
+				fc.lineCap = "round";
+				fc.lineJoin = "round";
+				fc.lineWidth = friends[name].penwidth;
+				fc.beginPath();
+				fc.moveTo(friends[name].pX * WW, friends[name].pY * HH);
+				fc.lineTo(friends[name].pX * WW, friends[name].pY * HH);
+				fc.lineTo(friends[name].x * WW, friends[name].y * HH);
+				fc.stroke();
 			}
 		}
-	}
+	});
 
 	nameFlash++;
 	if (nameFlash > 3) {
 		$("#incoming_scrop").html("…");
 	}
-}
-
-// render friends onto canvas
-function friender() {
-	Object.keys(friends).forEach(function (name) {
-		if (friends[name].active) {
-			//friends[name].pencolor = document.getElementById("pencolor").value;
-			//friends[name].penwidth = document.getElementById("penwidth").value;
-	
-			if(friends[name].pX != friends[name].x && friends[name].pY != friends[name].y)
-			{
-				if(friends[name].tool == ERASER)
-				{
-					//console.log("ERASE : "+friends[name].x*WW+" "+friends[name].y*HH+" "+friends[name].penwidth/2.);
-					fc.clearRect((friends[name].x * WW - friends[name].penwidth/2.), (friends[name].y * HH - friends[name].penwidth/2.), friends[name].penwidth, friends[name].penwidth);
-				} else {
-					if(friends[name].tool == BRUSH) {
-						//console.log("BRUSH");
-						rvb = hexToRgb("#"+friends[name].pencolor);
-						//console.log("RVB : "+rvb.r+" "+rvb.g+" "+rvb.b);
-						fc.strokeStyle = 'rgba('+rvb.r+','+rvb.g+','+rvb.b+',0.02)';
-						fc.lineCap = "round";
-						fc.lineJoin = "round";
-					} else {
-						//console.log("PEN");
-						fc.strokeStyle = "#"+friends[name].pencolor;
-						fc.lineCap = "round";
-						fc.lineJoin = "round";
-					}
-					fc.lineWidth = friends[name].penwidth;
-					fc.beginPath();
-					if(friends[name].pX == -1) {
-						friends[name].pX = friends[name].x;
-						friends[name].pY = friends[name].y;
-					}
-					fc.moveTo(friends[name].pX * WW, friends[name].pY * HH);
-					fc.lineTo(friends[name].pX * WW, friends[name].pY * HH);
-					fc.lineTo(friends[name].x * WW, friends[name].y * HH);
-					fc.stroke();
-				}
-			}
-		}
-	});
 }
 
 function clearLocal() {
@@ -269,34 +213,26 @@ function updateFriend(name, msg) {
 $(document).ready(function () {
 	$("#outcanvas").on("mousedown", function (e) {
 		e.originalEvent.preventDefault();
-		WW = outcan.scrollWidth;
-		HH = outcan.scrollHeight;
+		
 		friend.active = true;
 		friend.pX = -1;
-		friend.x = e.pageX / WW;
-		friend.y = e.pageY / HH;
-		sendIt();
+		
+		sendEvt(e);
+		
 		$(document).on("mousemove", function (e) {
+			
 			friend.pX = friend.x;
 			friend.pY = friend.y;
-			friend.x = e.pageX / WW;
-			friend.y = e.pageY / HH;
-			if(friend.tool != ERASER)
-			{
-				//console.log("PEN || BRUSH");
-				outc.moveTo(friend.pX * WW, friend.pY * HH);
-				outc.lineTo(friend.x * WW, friend.y * HH);
-				outc.stroke();
-			} else {
-				outc.clearRect((friend.x * WW - friend.penwidth/2.), (friend.y * HH - friend.penwidth/2.), friend.penwidth, friend.penwidth);
-			}
-			sendIt();
+			
+			sendEvt(e);
 		});
 		$(document).on("mouseup", function (e) {
 			$(document).unbind("mousemove");
 			$(document).unbind("mouseup");
+			
 			friend.active = false;
 			friend.pX = -1;
+			
 			sendIt();
 		});
 	});
@@ -305,38 +241,63 @@ $(document).ready(function () {
 		e.preventDefault();
 		e.originalEvent.preventDefault();
 		let ev = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-		WW = outcan.scrollWidth;
-		HH = outcan.scrollHeight;
+		
 		friend.active = true;
 		friend.pX = -1;
-		friend.x = ev.pageX / WW;
-		friend.y = ev.pageY / HH;
-		sendIt();
+		
+		sendEvt(ev);
+		
 		$(document).on("touchmove", function (e) {
 			e.preventDefault();
 			e.originalEvent.preventDefault();
 			let ev = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+			
 			friend.pX = friend.x;
 			friend.pY = friend.y;
-			friend.x = ev.pageX / WW;
-			friend.y = ev.pageY / HH;
-			if(friend.tool != ERASER)
-			{
-				outc.moveTo(friend.pX * WW, friend.pY * HH);
-				outc.lineTo(friend.x * WW, friend.y * HH);
-				outc.stroke();
-			} else {
-				outc.clearRect((friend.x * WW - friend.penwidth/2.), (friend.y * HH - friend.penwidth/2.), friend.penwidth, friend.penwidth);
-			}
-			sendIt();
+			
+			sendEvt(e);
 		});
 		$(document).on("touchend", function (e) {
 			$(document).unbind("touchmove");
 			$(document).unbind("touchend");
+			
 			friend.active = false;
 			friend.pX = -1;
+			
 			sendIt();
 		});
-	});//*/
+	});
 });
 
+function sendEvt(ev)
+{
+	friend.x = ev.pageX / WW;
+	friend.y = ev.pageY / HH;
+	friend.pencolor = document.getElementById("pencolor").value;
+	friend.penwidth = document.getElementById("penwidth").value;
+
+	if(friend.tool == ERASER)
+	{
+		outc.clearRect((friend.x * WW - friend.penwidth/2.), (friend.y * HH - friend.penwidth/2.), friend.penwidth, friend.penwidth);
+	} else {
+		if(friend.pX == -1) {
+			friend.pX = friend.x;
+			friend.pY = friend.y;
+		}
+		outc.lineCap = "round";
+		outc.lineJoin = "round";
+		outc.lineWidth = friend.penwidth;
+		if(friend.tool == BRUSH) {
+			rvb = hexToRgb("#"+friend.pencolor);
+			outc.strokeStyle = 'rgba('+rvb.r+','+rvb.g+','+rvb.b+',0.02)';
+		} else {
+			outc.strokeStyle = "#"+friend.pencolor;
+		}
+		outc.beginPath();
+		outc.moveTo(friend.pX * WW, friend.pY * HH);
+		outc.lineTo(friend.pX * WW, friend.pY * HH);
+		outc.lineTo(friend.x * WW, friend.y * HH);
+		outc.stroke();
+	}
+	sendIt();
+}
