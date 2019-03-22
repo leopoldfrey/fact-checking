@@ -4,3 +4,122 @@ ignore/fact-checking-old/
 ignore/jscolor-2.0.5.zip
 ignore/socket-drawings.zip
 ignore/socket-drawings/
+ignore/cefclient.app/Contents/Frameworks/cefclient Helper.app/Contents/Info.plist
+ignore/cefclient.app/Contents/Frameworks/cefclient Helper.app/Contents/MacOS/cefclient Helper
+ignore/cefclient.app/Contents/Frameworks/cefclient Helper.app/Contents/PkgInfo
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Chromium Embedded Framework
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/am.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/ar.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/bg.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/bn.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/ca.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/cef.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/cef_100_percent.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/cef_200_percent.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/cef_extensions.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/cs.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/da.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/de.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/devtools_resources.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/el.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/en.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/en_GB.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/es.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/es_419.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/et.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/fa.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/fi.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/fil.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/fr.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/gu.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/he.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/hi.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/hr.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/hu.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/icudtl.dat
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/id.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/Info.plist
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/it.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/ja.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/kn.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/ko.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/lt.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/lv.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/ml.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/mr.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/ms.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/natives_blob.bin
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/nb.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/nl.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/pl.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/pt_BR.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/pt_PT.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/ro.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/ru.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/sk.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/sl.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/snapshot_blob.bin
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/sr.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/sv.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/sw.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/ta.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/te.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/th.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/tr.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/uk.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/vi.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/zh_CN.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Chromium Embedded Framework.framework/Resources/zh_TW.lproj/locale.pak
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Headers/Syphon.h
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Headers/SyphonClient.h
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Headers/SyphonImage.h
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Headers/SyphonServer.h
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Headers/SyphonServerDirectory.h
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Resources/English.lproj/InfoPlist.strings
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Resources/Info.plist
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Syphon
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Versions/A/Headers/Syphon.h
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Versions/A/Headers/SyphonClient.h
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Versions/A/Headers/SyphonImage.h
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Versions/A/Headers/SyphonServer.h
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Versions/A/Headers/SyphonServerDirectory.h
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Versions/A/Resources/English.lproj/InfoPlist.strings
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Versions/A/Resources/Info.plist
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Versions/A/Syphon
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Versions/Current/Headers/Syphon.h
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Versions/Current/Headers/SyphonClient.h
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Versions/Current/Headers/SyphonImage.h
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Versions/Current/Headers/SyphonServer.h
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Versions/Current/Headers/SyphonServerDirectory.h
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Versions/Current/Resources/English.lproj/InfoPlist.strings
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Versions/Current/Resources/Info.plist
+ignore/cefclient.app/Contents/Frameworks/Syphon.framework/Versions/Current/Syphon
+ignore/cefclient.app/Contents/Info.plist
+ignore/cefclient.app/Contents/MacOS/cefclient
+ignore/cefclient.app/Contents/PkgInfo
+ignore/cefclient.app/Contents/Resources/binding.html
+ignore/cefclient.app/Contents/Resources/cefclient.icns
+ignore/cefclient.app/Contents/Resources/dialogs.html
+ignore/cefclient.app/Contents/Resources/draggable.html
+ignore/cefclient.app/Contents/Resources/drm.html
+ignore/cefclient.app/Contents/Resources/Info.plist
+ignore/cefclient.app/Contents/Resources/InfoPlist.strings
+ignore/cefclient.app/Contents/Resources/localstorage.html
+ignore/cefclient.app/Contents/Resources/logo.png
+ignore/cefclient.app/Contents/Resources/MainMenu.nib
+ignore/cefclient.app/Contents/Resources/menu_icon.1x.png
+ignore/cefclient.app/Contents/Resources/menu_icon.2x.png
+ignore/cefclient.app/Contents/Resources/osr_test.html
+ignore/cefclient.app/Contents/Resources/other_tests.html
+ignore/cefclient.app/Contents/Resources/pdf.html
+ignore/cefclient.app/Contents/Resources/pdf.pdf
+ignore/cefclient.app/Contents/Resources/performance.html
+ignore/cefclient.app/Contents/Resources/performance2.html
+ignore/cefclient.app/Contents/Resources/preferences.html
+ignore/cefclient.app/Contents/Resources/response_filter.html
+ignore/cefclient.app/Contents/Resources/transparency.html
+ignore/cefclient.app/Contents/Resources/urlrequest.html
+ignore/cefclient.app/Contents/Resources/window.html
+ignore/cefclient.app/Contents/Resources/window_icon.1x.png
+ignore/cefclient.app/Contents/Resources/window_icon.2x.png
+ignore/cefclient.app/Contents/Resources/xmlhttprequest.html
